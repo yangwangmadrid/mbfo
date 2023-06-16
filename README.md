@@ -107,7 +107,24 @@ central $\mathrm{Pt}^{2+}$ and the ligands, four $\mathrm{Cl}^{-}$.
 
 First, we carry out a DFT single-point calculation, based on the optimized
 geometry, to obtain the two files, PtCl4-2.fchk and PtCl4-2.33, as required by
-the mbfo program.
+the mbfo program. The Gaussian's input file (PtCl4-2.gjf) for producing the above two files is as follows:
+```
+# PBEPBE/Def2TZVPP fchk=All Pop=NBO6Read NOSYMM
+ 
+From PtCl4-2_opt.out
+
+-2 1
+    78   -1.542120   -1.576087    0.000000
+    17    0.818936   -1.576087    0.000000
+    17   -1.542120    0.784968   -0.000000
+    17   -3.903175   -1.576087    0.000000
+    17   -1.542120   -3.937142   -0.000000
+ 
+$NBO
+  NOBOND
+  AONAO=W
+$END
+```
 
 Next, we prepare a text file named PtCl4-2.inp with the following content:
 ```
@@ -125,6 +142,7 @@ iii) Indices of atoms for `Frag` can be defined in a more compact way following 
 ```
 Frag = 10, 3:5 9 8/1
 ```
+This example means that seven atoms, 1, 3, 4, 5, 8, 9 and 10, are defined as fragment A while the rest of atoms are defined as fragment B.
 
 Then, we run mbfo using the following command under the working directory:
 ```
