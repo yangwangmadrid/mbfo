@@ -1,0 +1,8 @@
+zap
+set frank off
+background white
+load PtCl4-2_MBFO-A1.cube
+isosurface A cutoff 0.05 sign red blue PtCl4-2_MBFO-A1.cube translucent 0.3
+isosurface B cutoff 0.05 sign pink skyblue PtCl4-2_MBFO-B1.cube translucent 0.3
+
+write image 800 800 PtCl4-2_MBFO-1.png
