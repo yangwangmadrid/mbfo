@@ -2,6 +2,9 @@
 
 A useful tool for analyzing the chemical interactions between any two fragments of a molecule on the basis of a standard DFT or Hartree-Fock calculation.
 
+<img src="https://raw.githubusercontent.com/yangwangmadrid/mbfo/main/images/toc.png" 
+     alt="Logo of the mbfo program" title="mbfo" width=480 />
+
 
 **Download link for the latest v1.0 version**:
 https://github.com/yangwangmadrid/mbfo/releases/download/v1.0/mbfo_v1.0_release.zip
