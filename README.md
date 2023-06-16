@@ -210,14 +210,14 @@ orbital and each of the Cls' sp4 hybridized orbitals.
 
 ### More keywords and options
 
-  - `Plot:`  *bool*
+  - **`Plot:`**  *`bool`*
         
         Whether or not plot the orbital correltion diagram for MBFOs/MBOs
         
         Default: FALSE
         
 
-  - `PlotCut:`  *a positive_value* or *a negative_value*
+  - **`PlotCut:`**  *`a positive_value`* or *`a negative_value`*
   
         In the orbital correltion diagram, only draw MBFOs/MBOs with a bond order (or an orbital interaction energy) 
         more significant than the cutoff value. 
@@ -226,21 +226,21 @@ orbital and each of the Cls' sp4 hybridized orbitals.
         Default: 0.01
         
 
-  - `LabelPlot:`  *TRUE* or *FALSE*
+  - **`LabelPlot:`**  *`TRUE`* or *`FALSE`*
   
         Whether or not show the labeling of MBFO/MBO levels in the orbital correltion diagram
         
         Default: TRUE
         
 
-  - `PrintPop:`  *bool* 
+  - **`PrintPop:`**  *`bool`* 
   
         Whether or not print population analysis based on the Mulliken scheme and on the natural atomic orbitals
         
         Default: FALSE
         
 
-  - `WriteOrb:`  *MBFO* and/or *MBO* and/or *NAO* and/or *AO* 
+  - **`WriteOrb:`**  *`MBFO`* and/or *`MBO`* and/or *`NAO`* and/or *`AO`* 
   
         Write the corresponding orbtials to external fchk files
         
