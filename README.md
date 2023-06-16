@@ -103,7 +103,7 @@ As you see, you will find the MBFO analysis results in file "abc.mbfo".
 ### A simple example to start with MBFO analysis
 
 Taking $\mathrm{PtCl}_{4}^{2-}$ dianion as a simple example, the bonding nature between the
-central $\mathrm{Pt}^{2+}$ and the ligands, four $\mathrm{Cl}^{-}$.
+central $\mathrm{Pt}^{2+}$ and the ligands, four $\mathrm{Cl}^{-}$. All input and output files of this example can be found in folder "examples/".
 
 First, we carry out a DFT single-point calculation, based on the optimized
 geometry, to obtain the two files, PtCl4-2.fchk and PtCl4-2.33, as required by
