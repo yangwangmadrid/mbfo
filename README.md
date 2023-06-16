@@ -11,7 +11,7 @@ A useful tool for analyzing the chemical interactions between any two fragments 
 If you have used the mbfo program in your research papers or presentations, 
 it is obligatory to cite the following paper:
 
-1. Yang Wang. Maximum bonding fragment orbitals for deciphering complex chemical interactions. *Phys. Chem. Chem. Phys.* 2018, 20, 13792-13809.
+1. Yang Wang. Maximum bonding fragment orbitals for deciphering complex chemical interactions. *Phys. Chem. Chem. Phys.* 2018, 20, 13792-13809. [DOI:10.1039/C8CP01808A](https://pubs.rsc.org/en/content/articlelanding/2018/cp/c8cp01808a)
  
 
 ## Copyright and license
@@ -102,8 +102,8 @@ As you see, you will find the MBFO analysis results in file "abc.mbfo".
 
 ### A simple example to start with MBFO analysis
 
-Taking PtCl4^{2-} dianion as a simple example, the bonding nature between the
-central Pt^{2+} and the ligands, four Cl^{-}.
+Taking $\mathrm{PtCl}_{4}^{2-}$ dianion as a simple example, the bonding nature between the
+central $\mathrm{Pt}^{2+}$ and the ligands, four $\mathrm{Cl}^{-}$.
 
 First, we carry out a DFT single-point calculation, based on the optimized
 geometry, to obtain the two files, PtCl4-2.fchk and PtCl4-2.33, as required by
@@ -133,11 +133,11 @@ mbfo PtCl4-2.inp > PtCl4-2.mbfo
 We will see a graphic window pop up showing the orbital correlation diagram, as
 follows. 
 
-<img src="https://raw.githubusercontent.com/yangwangmadrid/mbfo/main/images/PtCl4-2_diagram.png" alt="MBFO/MBO diagram of PtCl4-2" title="MBFO/MBO diagram of PtCl4-2" width=360 />
+<img src="https://raw.githubusercontent.com/yangwangmadrid/mbfo/main/images/PtCl4-2_diagram.png" alt="MBFO/MBO diagram of PtCl4-2" title="MBFO/MBO diagram of PtCl4-2" width=600 />
 
 This diagram has also been exported to the file PtCl4-2_diagram.pdf.
 
-As we can see, there are only two major bonding interactions between Pt^{2+} and the ligands with a considerable bond order (BO > 0.1, as specified by `PlotCut` in PtCl4-2.inp). In the output file PtCl4-2.mbfo, we can find the BO values of these two major bonding interactions, being 0.997 and 0.785:
+As we can see, there are only two major bonding interactions between $\mathrm{Pt}^{2+}$ and the ligands with a considerable bond order (BO > 0.1, as specified by `PlotCut` in PtCl4-2.inp). In the output file PtCl4-2.mbfo, we can find the BO values of these two major bonding interactions, being 0.997 and 0.785:
 ```
 No.      BO  Occ(A)  Occ(B)     E(A)     E(B)    E(AB)   E*(AB)    Eint
 ------------------------------------------------------------------------
@@ -146,8 +146,8 @@ No.      BO  Occ(A)  Occ(B)     E(A)     E(B)    E(AB)   E*(AB)    Eint
 ... ...
 TOT 1.95144                                                      -21.77
 ```
-Both BO values are close to 1 and the total BO between Pt^{2+} and the ligands
-is close to 2 (1.951), suggesting that in this complex Pt^{2+} forms practically
+Both BO values are close to 1 and the total BO between $\mathrm{Pt}^{2+}$ and the ligands
+is close to 2 (1.951), suggesting that in this complex $\mathrm{Pt}^{2+}$ forms practically
 a double bond with the ligands and hence it is not a typical ionic compound and
 instead a covalent one.
 The above table also provides more information about the two major pairs of
@@ -164,8 +164,8 @@ No.     s    p    d    f    g    h      s    p    d    f    g    h
   2  0.93 0.00 0.07 0.00 0.00 0.00   0.21 0.79 0.00 0.00 0.00 0.00
 ... ...
 ```
-We see that the first MBFO of Pt^{2+} (fragment A) is purely a d orbital while
-the first MBFO of the ligands (fragment B) take an sp11 (ca. 0.91/0.08) hybridization for the Cl^{-} anions. For the second pair of MBFO, Pt^{2+} utilizes mainly its s orbitals whereas Cl^{-} anions takes a hybridization of sp3.8 (ca. 0.79/0.21).
+We see that the first MBFO of $\mathrm{Pt}^{2+}$ (fragment A) is purely a d orbital while
+the first MBFO of the ligands (fragment B) take an sp11 (ca. 0.91/0.08) hybridization for the $\mathrm{Cl}^{-}$ anions. For the second pair of MBFO, $\mathrm{Pt}^{2+}$ utilizes mainly its s orbitals whereas $\mathrm{Cl}^{-}$ anions takes a hybridization of sp3.8 (ca. 0.79/0.21).
 
 To further to confirm the above analysis, we shall like to visualize these two
 leading pairs of MBFOs to see their shapes and how they overlap with each other.
@@ -210,22 +210,38 @@ orbital and each of the Cls' sp4 hybridized orbitals.
 
 ### More keywords and options
 
-  - `**Plot:**`  *bool* 
+  - `Plot:`  *bool*
+        
         Whether or not plot the orbital correltion diagram for MBFOs/MBOs
-        *Default: `FALSE`*
+        
+        Default: FALSE
+        
 
-  - `**PlotCut:**`  *a positive_value* or *a negative_value*
-        In the orbital correltion diagram, only draw MBFOs/MBOs with a bond order (or an orbital interaction energy) more significant than the cutoff value. Positive and negative cutoff refer to, respectively, to bond order and interaction energy in kcal/mol.
-        *Default: `0.01`*
+  - `PlotCut:`  *a positive_value* or *a negative_value*
+  
+        In the orbital correltion diagram, only draw MBFOs/MBOs with a bond order (or an orbital interaction energy) 
+        more significant than the cutoff value. 
+        Positive and negative cutoff refer, respectively, to bond order and interaction energy in kcal/mol.
+        
+        Default: 0.01
+        
 
-  - **LabelPlot:**  *TRUE* or *FALSE* 
-        Whether or not show the labeling of MBFO/MBO levels in the orbital correltion diagram.
-        *Default: `TRUE`*
+  - `LabelPlot:`  *TRUE* or *FALSE*
+  
+        Whether or not show the labeling of MBFO/MBO levels in the orbital correltion diagram
+        
+        Default: TRUE
+        
 
-  - `**PrintPop:**`  *bool* 
+  - `PrintPop:`  *bool* 
+  
         Whether or not print population analysis based on the Mulliken scheme and on the natural atomic orbitals
-        *Default: `FALSE`*
+        
+        Default: FALSE
+        
 
-  - `**WriteOrb:**`  *MBFO* and/or *MBO* and/or *NAO* and/or *AO* 
+  - `WriteOrb:`  *MBFO* and/or *MBO* and/or *NAO* and/or *AO* 
+  
         Write the corresponding orbtials to external fchk files
-        *Default: `None`*
+        
+        Default: None
