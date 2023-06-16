@@ -137,7 +137,7 @@ File =  PtCl4-2        # Key name of the files for the calculated system
 Frag = 1               # Index(es) of the atoms for defining fragment A
 WriteOrb = MBFO, MBO   # Write the MBFOs and MBOs to external fchk files
 PlotCut = 0.1          # Only plotting MBFOs/MBOs with BO > this threshold
-ExportPlot = TRUE      # Export the orbital digram to a *_diagram.pdf file
+ExportPlot = TRUE      # Export the orbital diagram to a *_diagram.pdf file
 ```
 
 **NOTE**: 
