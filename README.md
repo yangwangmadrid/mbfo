@@ -4,6 +4,7 @@ A useful tool for analyzing the chemical interactions between any two fragments 
 
 
 **Download link for the latest v1.0 version**:
+https://github.com/yangwangmadrid/mbfo/releases/download/v1.0/mbfo_v1.0_release.zip
 
 
 ## How to cite
@@ -12,6 +13,7 @@ If you have used the mbfo program in your research papers or presentations,
 it is obligatory to cite the following paper:
 
 1. Yang Wang. Maximum bonding fragment orbitals for deciphering complex chemical interactions. *Phys. Chem. Chem. Phys.* 2018, 20, 13792-13809. [DOI:10.1039/C8CP01808A](https://pubs.rsc.org/en/content/articlelanding/2018/cp/c8cp01808a)
+2. Yang Wang. The mbfo program. 2023. [https://github.com/yangwangmadrid/mbfo](https://github.com/yangwangmadrid/mbfo).
  
 
 ## Copyright and license
