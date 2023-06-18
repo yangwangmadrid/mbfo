@@ -6,8 +6,8 @@ A useful tool for analyzing the chemical interactions between any two fragments 
      alt="Logo of the mbfo program" title="mbfo" width=480 />
 
 
-**Download link for the latest v1.0 version**:
-https://github.com/yangwangmadrid/mbfo/releases/download/v1.0/mbfo_v1.0_release.zip
+**Download link for the latest v1.1 version**:
+https://github.com/yangwangmadrid/mbfo/releases/download/v1.1/mbfo_v1.1_release.zip
 
 
 ## How to cite
@@ -237,7 +237,7 @@ orbital and each of the Cls' sp4 hybridized orbitals.
         
         Whether or not plot the orbital correltion diagram for MBFOs/MBOs
         
-        Default: FALSE
+        Default: TRUE
         
 
   - **`PlotCut:`**  *`a positive_value`* or *`a negative_value`*
@@ -268,3 +268,4 @@ orbital and each of the Cls' sp4 hybridized orbitals.
         Write the corresponding orbtials to external fchk files
         
         Default: None
+
